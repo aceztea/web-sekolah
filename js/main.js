@@ -1,5 +1,10 @@
-jQuery(document).ready(function ($) {
-
+$(document).ready(function ($) {
+  $(window).on('load', function() {
+    // Animate loader off screen
+    setTimeout(function() {
+      $(".se-pre-con").fadeOut("slow");
+    }, 1000)
+  });
   // Header fixed and Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
