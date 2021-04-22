@@ -97,12 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 26px;
+  font-size: 22px;
   margin: 0;
   line-height: 1;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -113,14 +113,42 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  width: 40px;
+}
+
+@media (max-width: 991px) {
+  #header #logo h1 {
+    font-size: 14px;
+  }
+  #header #logo img {
+    width: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header #logo h1 {
+    font-size: 26px;
+  }
+  #header #logo img {
+    width: 36px;
+  }
 }
 
 @media (max-width: 768px) {
   #header #logo h1 {
-    font-size: 90%;
+    font-size: 13px;
   }
   #header #logo img {
-    max-height: 40px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  #header #logo h1 {
+    font-size: 13px;
+  }
+  #header #logo img {
+    width: 30px;
   }
 }
 
@@ -293,16 +321,37 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 1200px) {
+  .nav-menu a {
+    font-size: 16px;
+    padding: 5px 4px 5px 4px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-menu a {
+    font-size: 14px;
+    padding: 8px 4px 5px 4px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-menu a {
+    font-size: 11px;
+    padding: 8px 0px 5px 0px;
+  }
+}
+
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 0 8px 10px 8px;
+  /* padding: 12px 4px 10px 4px; */
   text-decoration: none;
   display: inline-block;
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 13px;
+  /* font-size: 13px; */
   outline: none;
 }
 
@@ -368,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   top: 0;
   z-index: 999;
-  margin: 30px 17px 0 0;
+  margin: 26px 15px 0 0;
   border: 0;
   background: none;
   font-size: 24px;
@@ -484,7 +533,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 .section-header .section-description {
@@ -664,6 +713,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .description {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (max-width: 767px) {
+  #service .description {
+    margin: 30px 0 0 0;
+  }
 }
 
 /* Call To Action Section
@@ -1051,6 +1106,14 @@ p.tkecil {
   #portfolio .portfolio-item img{
     width: 100%;
   }
+  #portfolio .portfolio-item {
+    position: relative;
+    height: 350px;
+    overflow: hidden !important;
+    margin-bottom: 15px;
+    transition: all 350ms ease;
+    transform: scale(1);
+  }
 }
 
 #portfolio .portfolio-item .details {
@@ -1083,14 +1146,14 @@ p.tkecil {
 }
 
 #portfolio .portfolio-item:hover img {
-  top: -10px;
+  top: 0px;
 }
 
 /* Team Section
 --------------------------------*/
 #team {
   background: #fff;
-  padding: 80px 0 60px 0;
+  padding: 30px 0 60px 0;
 }
 
 #team .member {
@@ -1101,7 +1164,7 @@ p.tkecil {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  /* height: 200px; */
 }
 
 #team .member .pic img {
@@ -1284,6 +1347,11 @@ p.tkecil {
     width: 100%;
     height: 100%;
 }
+
+/* ---------------------------------- LSP --------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
 
 
 /*   Loader   */
